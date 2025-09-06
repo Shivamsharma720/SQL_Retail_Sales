@@ -146,6 +146,7 @@ FROM retail_sales
 )
 SELECT COUNT(*),shift as total_orders
 FROM hourly_sale
+GROUP BY shift
 
 --END
-GROUP BY shift
+
